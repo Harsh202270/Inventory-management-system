@@ -83,7 +83,7 @@ The project includes images/icons for improving UI appearance.
 ---
 
 ## 📌 **Conclusion**
-This project is a complete, modular, and efficient **Order & Inventory Management System** that demonstrates:
+This project is a complete, modular, and efficient **Inventory Management System** that demonstrates:
 - Web design (HTML/CSS)
 - Web interactivity (JavaScript)
 - Backend processing (Python)
