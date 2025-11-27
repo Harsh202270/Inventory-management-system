@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/countries.jpg);
+    background-size:cover;
+    box-shadow:aqua;
+  }
+  h2{
+    color:rgb(0, 255, 179);
+    align-items:center;
+  }
+
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width:40%;
+    border-radius: 20px;
+    box-shadow: 30px 20px 30px rgba(255, 0, 0, 0.541);
+    animation: pop-in 1.5s cubic-bezier(0.68,-0.6,0.32,1.6);
+  }
+
+
+  label {
+    font-weight: bold;
+    color: white;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 93%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: greenyellow;
+  }
+  input:hover,input:focus{
+    background-color: lightskyblue;
+    color:black;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type=button],input[type=submit] {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type=button]:hover,input[type=submit]:hover {
+    background-color: white;
+    color:black;
+  }
+  .blink
+  {
+    animation:blinker 3s linear infinite;
+    color:rgb(0, 255, 179);
+    font-family:sans-serif;
+    text-align: center;
+  }
+@keyframes blinker
+{
+  50%{
+       opacity:0;
+     }
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h2><a class=blink>COUNTRIES</a></h2>
+  <form name=f method=post action=countries.py>
+    <label for="name">COUNTRY_ID:</label>
+    <input type="text" name="t1">
+
+    <label for="name">COUNTRY_NAME:</label>
+    <input type="text" name="t2">
+
+    <label for="name">REGION_ID:</label>
+    <input type="text" name="t3">
+
+    <input type="button" name=b1 value=New onclick="a()">&nbsp;
+    <input type="submit" name=b1 value=Save>&nbsp;
+    <input type="submit" name=b1 value=Update>&nbsp;
+    <input type="submit" name=b1 value=Delete><br><br>
+    <input type="submit" name=b1 value="All Search">&nbsp;
+    <input type="submit" name=b1 value=PSearch>&nbsp;
+    <input type="submit" name=b1 value=Home>&nbsp;
+    <input type="submit" name=b1 value=Exit>
+  </form>
+</div>
+</body>
+<script>
+  function a()
+  {
+    f.t1.value="";
+    f.t2.value="";
+    f.t3.value="";
+  }
+</script>
+</html>

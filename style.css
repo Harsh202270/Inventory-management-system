@@ -1,0 +1,93 @@
+body {
+    background-image: url(hacker.gif);
+    color: #0F0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container2{
+    height:4rem;
+    width:4rem;
+    margin-left:30%;
+    background-image:url(hacker1.jpg);
+    background-position:center;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    border-radius:50%;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.login-form {
+    background-color: #1111116e;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    margin:0px;
+}
+a{
+    float: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #333;
+    color: #0F0;
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    width: 93%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+input:focus[type="text"],
+input:focus[type="password"] {
+    background-color: rgb(5, 113, 5);
+    color: #0F0;
+    
+}
+
+.login-button {
+    background-color: #0F0;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float:left;
+}
+
+.login-button1 {
+    background-color: #0F0;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float:right;
+}
+
+.login-button:hover,.login-button:focus {
+    background-color: #34ad30;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.457);
+}
